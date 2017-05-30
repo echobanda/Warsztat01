@@ -5,54 +5,76 @@
   <meta charset="UTF-8">
   <title>CodersLab</title>
   <link rel="stylesheet" href="css/style.css">
+  <script src="js/app.js" type="text/javascript"></script>
 </head>
 
 <body>
   <header>
     <div class="main-width">
-      <div id="header-logo">
+      <div class="header-logo">
         <p><span>SIT</span> <span id="color">ON</span> <span>CHAIR</span></p>
       </div>
-      <div id="header-menu">
-        <ul>
-          <li>O FIRMIE</li>
-          <li>GALERIA</li>
-          <li>KONTAKT</li>
-        </ul>
+      <div class="header-menu">
+        <div class="container">
+          <a href="#home">GALERIA</a>
+          <a href="#news">KONTAKT</a>
+          <div class="dropdown">
+            <button class="dropbtn">O FIRMIE</button>
+            <div class="dropdown-content">
+              <a href="#">Aktualności</a>
+              <a href="#">Nasz team</a>
+              <a href="#">Historia</a>
+            </div>
+          </div>
+        </div>
       </div>
+
     </div>
   </header>
-  </div>
-  </section>
   <div class="clear-fix"></div>
   <section class="slider">
     <div class="main-width">
-      <div id="left"><span><</span>
+      <div>
+        <button id="buttonPrev"><span><</span>
+      </button></div>
+      <div class="chair">
+        <ul>
+          <li class="slider_img"><img src="images/black_chair.png" class="black_chair">
+            <div class="text_black_chair">
+              <p>
+                <h1><span>SIT</span> <span id="color">ON</span> OUR <span id="color">CHAIR</span></h1></p>
+              <p>Leather has been a medium for furniture since the ancient Egyptians. Leather chairs are popular throughout the world, and provide a tough, comfortable, material for long lasting furniture. Leather dining chairs are comfortable, elegant,
+                and easy to keep clean.</p>
+              <a href="" class="green_button">ZOBACZ WIĘCEJ
+                    </a></div>
+          </li>
+          <li class="slider_img"><img src="images/orange.png" class="orange_chair">
+            <div class="text_orange_chair">
+              <p>
+                <h1><span>SIT</span> <span id="color">ON</span> OUR <span id="color">CHAIR</span></h1></p>
+              <p>Orange Leather has been a medium for furniture since the ancient Egyptians. Leather chairs are popular throughout the world, and provide a tough, comfortable, material for long lasting furniture. Leather dining chairs are comfortable, elegant,
+                and easy to keep clean.</p>
+              <a href="" class="green_button">ZOBACZ WIĘCEJ
+                                </a></div>
+          </li>
+        </ul>
       </div>
-      <div id="chair">
-      </div>
-      <div id="text">
-        <p>
-          <h1><span>SIT</span> <span id="color">ON</span> OUR <span id="color">CHAIR</span></h1></p>
-        <div class="clear-fix"></div>
-        <p>Cras voluae. Nullam feugiat risus eu nulla condimentum porttitor. Cras ac orci varius, laoreet nulla id, blandit sapien. Duis hendrerit, mi sit amet dictum ultricies, ligula metus ultricies nisi, at vestibulum </p>
-        <div id="button">ZOBACZ WIĘCEJ
-        </div>
-        <div id="right"><span>></span>
-        </div>
-      </div>
+      <div>
+        <button id="buttonNext"><span>></span>
+    </button></div>
+    </div>
   </section>
   <div class="clear-fix"></div>
   <section class="products">
     <div class="main-width">
       <div class="content-box-a">
-        <div id="opacity">
+        <div id="opacity_1">
           <p id="baner"><span>Chair CLAIR</span></p>
         </div>
       </div>
       <div class="content-box-b">
-        <div id="opacity">
-          <p id="baner">Chair MARGARITA</p>
+        <div id="opacity_2">
+          <p id="baner"><span>Chair MARGARITA</span></p>
         </div>
       </div>
       <div class="content-box-c">
@@ -125,7 +147,84 @@
           </div>
         </div>
       </div>
+    </div>
   </section>
+  <div class="clear-fix"></div>
+  <section class="application">
+
+    <div class="main_width">
+      <div class="choice_part inline">
+        <header>
+          <h3>SKOMPONUJ SWOJE KRZESŁO</h3>
+          <span class="green_bell"></span>
+        </header>
+
+        <div class="form">
+          <div class="drop_down_list">
+            <span class="list_label">Wybierz rodzaj</span>
+            <span class="list_arrow"></span>
+            <ul class="list_panel">
+              <li>Clair</li>
+              <li>Margarita</li>
+              <li>Selena</li>
+            </ul>
+          </div>
+          <div class="drop_down_list">
+            <span class="list_label">Wybierz kolor</span>
+            <span class="list_arrow"></span>
+            <ul class="list_panel">
+              <li>Czerwony</li>
+              <li>Czarny</li>
+              <li>Pomarańczowy</li>
+            </ul>
+          </div>
+          <div class="drop_down_list">
+            <span class="list_label">Wybierz materiał</span>
+            <span class="list_arrow"></span>
+            <ul class="list_panel">
+              <li>Tkanina</li>
+              <li>Skóra</li>
+            </ul>
+          </div>
+          <div class="checkbox check-box">
+            <input type="checkbox" id="transport" data-transport-price="200">
+            <label for="transport">Transport</label>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="image_part inline">
+        <img src="images/red_chair.png">
+      </div>
+
+      <div class="summary_part inline">
+        <header class="align_right">
+          <h3>PODSUMOWANIE</h3>
+          <span class="green_bell"></span>
+        </header>
+
+        <div class="summary_panel">
+          <div class="panel_left">
+            <h4 class="title">Twój fotel</h4>
+            <span class="color"></span>
+            <span class="pattern"></span>
+            <span class="transport"></span>
+          </div>
+          <div class="panel_right">
+            <h4 class="title value"></h4>
+            <span class="color value"></span>
+            <span class="pattern value"></span>
+            <span class="transport value"></span>
+          </div>
+          <div class="sum_label">SUMA</div>
+          <div class="sum"><strong></strong></div>
+        </div>
+        <a href="" class="green_button">Zamawiam</a>
+      </div>
+    </div>
+  </section>
+
   <div class="clear-fix"></div>
   <section class="contact">
     <div class="main-width">
@@ -150,9 +249,11 @@
         <img id="img1" src="./images/red_chair.png" alt="red chair" title="red chair"></img>
         <div class="clear-fix"></div>
         <div>
-          <img id="img2" src="./images/form_ok.jpg" alt="form ok" title="form ok"></img>
-          <div id="contact">Zgadzam się na przetwarzanie danych osobowych</div>
-          <div id="contact_button">WYŚLIJ</div>
+          <div class="checkbox check-box">
+            <input type="checkbox" id="aprove" data-transport-price="200">
+            <label for="aprove">Zgadzam się na przetwarzanie danych osobowych</label>
+          </div>
+          <a href="" class="green_button">WYŚLIJ</a>
         </div>
       </div>
   </section>
