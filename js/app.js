@@ -1,4 +1,5 @@
 document.addEventListener("DOMContentLoaded", function() {
+
 // slider
 
 var buttonNext = document.getElementById("buttonNext");

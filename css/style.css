@@ -244,7 +244,7 @@ header {
   float: left;
 }
 
-.black_chair {
+.chair_img {
   width: 50%;
   margin: 0 auto;
   float: left;
@@ -253,7 +253,7 @@ header {
   transform: translate(50px, -30px);
 }
 
-.text_black_chair {
+.text_chair {
   width: 40%;
   margin: 0 auto;
   float: right;
@@ -264,47 +264,19 @@ header {
   display: inline;
 }
 
-.text_black_chair h1 {
+.text_chair h1 {
   font-size: 30px;
 }
 
-.text_black_chair p:nth-of-type(2) {
+.text_chair p:nth-of-type(2) {
   padding-top: 20px;
 }
 
-.text_black_chair p:last-of-type {
+.text_chair p:last-of-type {
   padding-top: 10px;
 }
 
 
-}
-.orange_chair {
-  width: 100%;
-  margin: 0 auto;
-  float: left;
-  z-index: 2;
-  display: inline;
-  transform: translate(50px, -30px);
-}
-.text_orange_chair {
-  width: 40%;
-  margin: 0 auto;
-  float: right;
-  transform: translate(-80px, 30px);
-  text-align: normal;
-  vertical-align: middle;
-  z-index: 2;
-  display: inline;
-}
-.text_orange_chair h1 {
-  font-size: 30px;
-}
-.text_orange_chair p:nth-of-type(2) {
-  padding-top: 20px;
-}
-.text_orange_chair p:last-of-type {
-  padding-top: 10px;
-}
 #buttonPrev {
   font-size: 80px;
   color: #24ba9f;
