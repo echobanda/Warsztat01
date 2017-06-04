@@ -47,5 +47,113 @@ buttonPrev.addEventListener("click", function() {
 
   })
 
-  
+
+//Zmiana koloru cennika
+      var prices_left = document.getElementsByClassName("prices_left");
+      for (var i = 0; i < prices_left.length; i++) {
+          prices_left[i].addEventListener("mouseover", function () {
+            this.style.backgroundColor = "#24ba9f";
+            this.style.border = "2px solid #24ba9f";
+            this.querySelector(".price").style.backgroundColor = "white";
+            this.querySelector(".price").style.border = "#24ba9f";
+            this.querySelector("h3").style.color = "white";
+            this.querySelector(".price-button").style.backgroundColor = "white";
+            this.querySelector(".price-button").style.color = "#24ba9f";
+            this.querySelector(".circle").style.backgroundColor = "#24ba9f";
+            this.querySelector(".circle").style.border = "2px solid #24ba9f";
+            this.querySelector(".small-circle").style.backgroundColor = "white";
+          });
+      }
+      for (var i = 0; i < prices_left.length; i++) {
+          prices_left[i].addEventListener("mouseout", function () {
+              this.style.backgroundColor = "#fbfbfb";
+              this.style.border = "2px solid lightgrey";
+              this.querySelector(".price").style.backgroundColor = "white";
+              this.querySelector(".price").style.border = "2px solid lightgrey";
+              this.querySelector("h3").style.color = "#24ba9f";
+              this.querySelector(".price-button").style.backgroundColor = "#24ba9f";
+              this.querySelector(".price-button").style.color = "white";
+              this.querySelector(".circle").style.backgroundColor = "white";
+              this.querySelector(".circle").style.border = "2px solid lightgrey";
+              this.querySelector(".small-circle").style.backgroundColor = "darkgrey";
+          });
+      }
+
+      var prices_right = document.getElementsByClassName("prices_right");
+      for (var i = 0; i < prices_left.length; i++) {
+          prices_right[i].addEventListener("mouseover", function () {
+            this.style.backgroundColor = "#24ba9f";
+            this.style.border = "2px solid #24ba9f";
+            this.querySelector(".price").style.backgroundColor = "white";
+            this.querySelector(".price").style.border = "#24ba9f";
+            this.querySelector("h3").style.color = "white";
+            this.querySelector(".price-button").style.backgroundColor = "white";
+            this.querySelector(".price-button").style.color = "#24ba9f";
+            this.querySelector(".circle").style.backgroundColor = "#24ba9f";
+            this.querySelector(".circle").style.border = "2px solid #24ba9f";
+            this.querySelector(".small-circle").style.backgroundColor = "white";
+          });
+      }
+      for (var i = 0; i < prices_left.length; i++) {
+          prices_right[i].addEventListener("mouseout", function () {
+              this.style.backgroundColor = "#fbfbfb";
+              this.style.border = "2px solid lightgrey";
+              this.querySelector(".price").style.backgroundColor = "white";
+              this.querySelector(".price").style.border = "2px solid lightgrey";
+              this.querySelector("h3").style.color = "#24ba9f";
+              this.querySelector(".price-button").style.backgroundColor = "#24ba9f";
+              this.querySelector(".price-button").style.color = "white";
+              this.querySelector(".circle").style.backgroundColor = "white";
+              this.querySelector(".circle").style.border = "2px solid lightgrey";
+              this.querySelector(".small-circle").style.backgroundColor = "darkgrey";
+          });
+      }
+
+      var prices_center = document.getElementsByClassName("prices_center");
+      for (var i = 0; i < prices_left.length; i++) {
+          prices_center[i].addEventListener("mouseover", function () {
+            this.style.backgroundColor = "#24ba9f";
+            this.style.border = "2px solid #24ba9f";
+            this.querySelector(".price").style.backgroundColor = "white";
+            this.querySelector(".price").style.border = "#24ba9f";
+            this.querySelector("h3").style.color = "white";
+            this.querySelector(".price-button").style.backgroundColor = "white";
+            this.querySelector(".price-button").style.color = "#24ba9f";
+            this.querySelector(".circle").style.backgroundColor = "#24ba9f";
+            this.querySelector(".circle").style.border = "2px solid #24ba9f";
+            this.querySelector(".small-circle").style.backgroundColor = "white";
+          });
+      }
+      for (var i = 0; i < prices_left.length; i++) {
+          prices_center[i].addEventListener("mouseout", function () {
+              this.style.backgroundColor = "#fbfbfb";
+              this.style.border = "2px solid lightgrey";
+              this.querySelector(".price").style.backgroundColor = "white";
+              this.querySelector(".price").style.border = "2px solid lightgrey";
+              this.querySelector("h3").style.color = "#24ba9f";
+              this.querySelector(".price-button").style.backgroundColor = "#24ba9f";
+              this.querySelector(".price-button").style.color = "white";
+              this.querySelector(".circle").style.backgroundColor = "white";
+              this.querySelector(".circle").style.border = "2px solid lightgrey";
+              this.querySelector(".small-circle").style.backgroundColor = "darkgrey";
+          });
+      }
+
+  //Kalkulator
+  //Dropdowns
+  var arrows = document.querySelectorAll(".list_arrow");
+  console.log(arrows);
+  for (var i = 0; i < arrows.length; i++) {
+      arrows[i].addEventListener("click", function () {
+          var dropdown = this.nextElementSibling;
+          if (dropdown.classList.contains("visible")) {
+              dropdown.classList.remove("visible");
+          } else {
+              dropdown.classList.add("visible");
+          }
+
+      });
+  }
+
+
 });
