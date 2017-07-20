@@ -157,6 +157,8 @@ header {
 .dropdown {
   float: right;
   overflow: hidden;
+  font-size: 15px;
+
 }
 
 .dropdown .dropbtn {
@@ -167,6 +169,7 @@ header {
   margin-right: 20px;
   background-color: inherit;
 }
+
 
 .container a:hover, .dropdown:hover .dropbtn {
   background-color: #24ba9f;
@@ -809,7 +812,7 @@ header {
   height: 600px;
   padding-left: 15px;
   display: inline-block;
-  background-color: #f1f1f1;
+  background-color: white;
   color: grey;
 }
 #contact_logo {
@@ -910,6 +913,7 @@ footer {
   display: inline-block;
   float: left;
   width: 100%;
+  background-color: #f1f1f1;
 }
 #footer_copy {
   float: left;
